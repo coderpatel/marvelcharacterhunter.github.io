@@ -1,0 +1,75 @@
+#head{
+    background-color: red;
+    color:white;
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+.container{
+    position:relative;
+}
+
+.toShowOnTop{
+    position: absolute;
+    top:20%;
+    margin: auto;
+    z-index:1;
+    width:fit-content
+}
+
+.bg-color{
+    background-color: darkgray;
+}
+
+a{
+    color:black;
+}
+
+.popup{
+    width:250px;
+    background: gray;
+    border-radius: 6px;
+    position:absolute;
+    top:0;
+    left:35%;
+    transform: scale(0.1);
+    text-align: center;
+    padding: 0 20px 20px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s top 0.4s;
+}
+
+.open-popup{
+    visibility: visible;
+    top:20%;
+    left:35%;
+    transform: scale(1);
+    z-index: 2;
+}
+
+.popup h2{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 30px 0px 10px;
+}
+
+.popup button{
+    width:50%;
+    margin-top:20px;
+    padding: 10px 0px;
+    background:darkgray;
+    outline: none;
+    font-size: 15px;
+    border-radius: 3px;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+}
+
+.card-deck{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex:1 1 0%;
+    align-items: flex-start;
+}
